@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TodoList</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <div id="Pending" class="item one">
+                <div class="header">Pending</div>
+            </div>
+            <div class="item two" ondrop="drop(event)">
+                <div class="header">In Progress</div>
+            </div>
+            <div class="item three">
+                <div class="header">Completed</div>
+            </div>
+        </div>
+        <div class="task_form">
+            <div id="flip">
+                ADD A TASK
+            </div>
+            <div id="panel">
+                <input id="title" type="text" placeholder="Title"><br>
+                <textarea id="description" placeholder="Description"></textarea><br>
+                <input type="text" id="datepicker" placeholder="Due Date (dd/mm/yyyy)"><br>
+                <button type="button" id="submit">Add Task</button>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
